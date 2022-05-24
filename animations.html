@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+        .div1 {
+            height: 200px;
+            width: 100%;
+            background-color: black;
+            float: left;
+        }
+
+        .div2 {
+            background-color: green;
+            width: 100px;
+            height: 200px;
+            float: left;
+            animation-name: an1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+             
+        }
+
+
+        @keyframes an1 {
+            from {
+                width: 10px;
+            }
+
+            to {
+                width: 700px;
+            }
+
+
+        }
+
+        .div3{
+            height: 200px;
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            background-color: black;
+
+        }
+        .div4{
+            background-color: green;
+            width: 100px;
+            height: 200px;
+            float: right;
+            animation-name: an2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes an2{
+            from {
+                width: 10px;
+            }
+
+            to {
+                width: 700px;
+            }
+
+
+        }
+
+        .div5{
+            height: 300px;
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            background-color: black;
+
+        }
+        .div6{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            float: left;
+            animation-name: an3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        @keyframes an3 {
+        0% {background-color:red; left:0px; top:0px;  }
+        25%{background-color:yellow; left:200px; top:0px;}
+        50%{background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+      }
+      .div7{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            float: right;
+            animation-name: an4;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: relative;
+            margin-right: 200px;
+        }
+        @keyframes an4{
+        0% {background-color:red; left:0px; top:0px;  transform: rotate(360deg);}
+        25%{background-color:yellow; left:200px; top:0px; ;}
+        50%{background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+      }
+      .div8{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            float: right;
+            animation-name: an5;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: relative;
+            margin-right: 420px;
+        }
+        @keyframes an5{
+        0% {background-color:red; left:0px; top:0px;  transform: rotate(360deg);}
+        25%{background-color:yellow; left:200px; top:0px; ;}
+        50%{background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+      }
+      
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div2"> </div>
+    </div>
+
+    <div class="div3">
+        <div class="div4"></div>
+    </div>
+
+    <div class="div5">
+        <div class="div6"></div>
+        <div class="div7"></div>
+        <div class="div8"></div>
+    </div>
+
+    </div>
+</body>
+
+</html>
